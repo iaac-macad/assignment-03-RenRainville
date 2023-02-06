@@ -70,6 +70,9 @@ async function compute() {
   const trees = [];
   trees.push(param1);
   trees.push(param2);
+  trees.push(param3);
+  trees.push(param4);
+  trees.push(param5);
 
   const res = await RhinoCompute.Grasshopper.evaluateDefinition(
     definition,
