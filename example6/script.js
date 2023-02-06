@@ -187,7 +187,6 @@ function init() {
   // add a directional light
   const directionalLight = new THREE.DirectionalLight(0xffffff);
   directionalLight.intensity = 0.85;
-  directionalLight.position = (0,-200,500);
   scene.add(directionalLight);
 
   const ambientLight = new THREE.AmbientLight();
