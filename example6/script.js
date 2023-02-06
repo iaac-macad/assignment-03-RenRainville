@@ -166,7 +166,7 @@ let scene, camera, renderer, controls;
 function init() {
   // create a scene and a camera
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(1, 1, 1);
+  scene.background = new THREE.Color(0.25, 0.25, 0.75);
   camera = new THREE.PerspectiveCamera(
     75,
     window.innerWidth / window.innerHeight,
@@ -175,6 +175,7 @@ function init() {
   );
   camera.position.z = 50;
   camera.position.y = -100;
+  camera.position.x = -100;
 
   // create the renderer and add it to the html
   renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -186,11 +187,12 @@ function init() {
 
   // add a directional light
   const directionalLight = new THREE.DirectionalLight(0xffffff);
-  directionalLight.intensity = 0.85;
+  directionalLight.intensity = 2;
+  directionalLight.position.set(0,-200,500);
   scene.add(directionalLight);
 
   const ambientLight = new THREE.AmbientLight();
-  ambientLight.color = "Red";
+  ambientLight.color.set("Red");
   scene.add(ambientLight);
 
   animate();
