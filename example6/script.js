@@ -190,7 +190,7 @@ function init() {
   scene.add(directionalLight);
 
   const ambientLight = new THREE.AmbientLight();
-  ambientLight.color("Red");
+  ambientLight.color = "Red";
   scene.add(ambientLight);
 
   animate();
