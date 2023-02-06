@@ -171,9 +171,10 @@ function init() {
     75,
     window.innerWidth / window.innerHeight,
     0.1,
-    1000
+    2000
   );
-  camera.position.z = -30;
+  camera.position.z = 50;
+  camera.position.y = -100;
 
   // create the renderer and add it to the html
   renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -185,10 +186,12 @@ function init() {
 
   // add a directional light
   const directionalLight = new THREE.DirectionalLight(0xffffff);
-  directionalLight.intensity = 2;
+  directionalLight.intensity = 0.85;
+  directionalLight.position(0,-200,500);
   scene.add(directionalLight);
 
   const ambientLight = new THREE.AmbientLight();
+  ambientLight.color("Red");
   scene.add(ambientLight);
 
   animate();
