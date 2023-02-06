@@ -8,23 +8,23 @@ import { RhinoCompute } from 'rhinocompute'
 const definitionName = "Twist.gh";
 
 // Set up sliders
-const radius_slider = document.getElementById("Length");
+const radius_slider = document.getElementById("length");
 length_slider.addEventListener("mouseup", onSliderChange, false);
 length_slider.addEventListener("touchend", onSliderChange, false);
 
-const count_slider = document.getElementById("Initial Radius");
+const count_slider = document.getElementById("initialRadius");
 intRad_slider.addEventListener("mouseup", onSliderChange, false);
 intRad_slider.addEventListener("touchend", onSliderChange, false);
 
-const count_slider = document.getElementById("Fillet Radius");
+const count_slider = document.getElementById("filletRadius");
 filletRad_slider.addEventListener("mouseup", onSliderChange, false);
 filletRad_slider.addEventListener("touchend", onSliderChange, false);
 
-const count_slider = document.getElementById("Rotation");
+const count_slider = document.getElementById("rotation");
 rotation_slider.addEventListener("mouseup", onSliderChange, false);
 rotation_slider.addEventListener("touchend", onSliderChange, false);
 
-const count_slider = document.getElementById("Scale Factor");
+const count_slider = document.getElementById("scale");
 scale_slider.addEventListener("mouseup", onSliderChange, false);
 scale_slider.addEventListener("touchend", onSliderChange, false);
 
