@@ -173,9 +173,9 @@ function init() {
     0.1,
     2000
   );
-  camera.position.z = 50;
-  camera.position.y = -100;
-  camera.position.x = -100;
+  camera.position.z = 750;
+  camera.position.y = 500;
+  camera.position.x = 500;
 
   // create the renderer and add it to the html
   renderer = new THREE.WebGLRenderer({ antialias: true });
